@@ -90,7 +90,7 @@ function Board({ nrows = 5, ncols = 5, chanceLightStartsOn }) {
         const isWinner = hasWon(newBoard);
         if (isWinner) {
           setTimeout(() => {
-            alert("Congrats you won!");
+            alert("Congrats, you won!");
           }, 1000);
           setGameOver(true);
           return newBoard;
